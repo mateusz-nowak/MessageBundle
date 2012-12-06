@@ -1,0 +1,19 @@
+{
+    "name": "matix/message-bundle",
+    "type": "symfony-bundle",
+    "description": "A feature that allows to send SMS and VMS messages",
+    "homepage": "http://github.com/matixe/MessageBundle",
+    "license": "MIT",
+
+    "require": {
+        "php": ">=5.3.2",
+    },
+
+    "autoload": {
+        "psr-0": {
+            "Matix\\MessageBundle": ""
+        }
+    },
+
+    "target-dir": "Matix/MessageBundle"
+}
