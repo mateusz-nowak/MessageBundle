@@ -4,6 +4,7 @@ Application that send SMS and VMS messages using SMSApi.
 # How to
 
 > cd /your/symfony-project-application/src/
+
 > git clone git://github.com/matixe/MessageBundle.git Matix/MessageBundle
 
 in *app/AppKernel.php* add: 
@@ -18,9 +19,11 @@ If you want to send SMS message simply use in your controller:
 > $messageBundleService = $this->get('sms.messager.service');
 
 > // sms sending
+
 > $messageBundleService->sendSMS('660000000', 'Your message');
 
 > // vms sending
+
 > $messageBundleService->sendVMS('660000000', 'Your message');
 
 If you want to spool all the messages in a queue in your console:
