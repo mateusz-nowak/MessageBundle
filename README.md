@@ -12,7 +12,19 @@ in *app/AppKernel.php* add:
 
 in *app/config/config.yml* update your *imports* section:
 > - { resource: @MatixMessageBundle/Resources/config/services.xml }
-    
+
+In your *config/parameters.yml* add:
+```PHP
+mailer_password: null
+locale: en
+secret: 46e8b30a4ec6186a415ccea2adcbc10ada72a855
+database_path: null
+
+sms:
+  username: matix
+  password: testowe
+```
+
 # Example of use
 If you want to send SMS message simply use in your controller:
 
